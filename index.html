@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gizlilik Politikası</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--brand:#6D4AFF;--orchid:#B04DFF;--pink:#FF5FA2;--ink:#17132B;--muted:#5d5875;--bg:#FBFAFF;--card:#fff}
+@media (prefers-color-scheme: dark){:root{--ink:#F3F0FF;--muted:#b3acd0;--bg:#110E1F;--card:#1B1730}}
+*{box-sizing:border-box}body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,var(--brand),var(--orchid) 55%,var(--pink));color:#fff;padding:40px 16px 56px;border-radius:0 0 36px 36px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header h1{margin:.2em 0 .1em;font-size:clamp(28px,6vw,40px);line-height:1.1}
+header p{margin:0;opacity:.9}
+.lang{float:right;color:#fff;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:40px;text-decoration:none;font-weight:700;font-size:14px}
+main{margin-top:-28px}
+section{background:var(--card);border-radius:24px;padding:20px 22px;margin:14px 0;box-shadow:0 8px 28px rgba(109,74,255,.08)}
+h2{margin:0 0 8px;font-size:19px}
+ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+.muted{color:var(--muted);font-size:14px}
+a{color:var(--brand)}
+.steps li{margin:8px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 40px}
+</style></head>
+<body><header><div class="wrap"><a class="lang" href="en.html">English</a><div style="font-size:40px">🪙</div><h1>Gizlilik Politikası</h1><p>Ortak Kasa — ortak harcama defteri</p></div></header>
+<main class="wrap">
+<section><h2>Kısaca</h2><p>Ortak Kasa, ev ve yol arkadaşlarının ortak harcamalarını bölüşmesine yarayan bir uygulamadır. Uygulama para tutmaz, para transfer etmez; yalnızca kimin ne harcadığını ve kimin kime ne kadar borçlu olduğunu hesaplar. Verilerini satmayız.</p></section>
+<section><h2>Topladığımız bilgiler</h2><ul>
+<li><b>Hesap:</b> Google ile ya da e-posta ile giriş (Firebase Authentication). E-posta adresin yalnızca giriş için kullanılır, grup arkadaşlarına gösterilmez.</li>
+<li><b>Profil:</b> görünen adın, Google profil fotoğrafının adresi ve isteğe bağlı olarak girdiğin IBAN. IBAN'ı yalnızca aynı gruptaki kişiler görebilir.</li>
+<li><b>Grup kayıtları:</b> grup adı ve ayarları, harcamalar (başlık, tutar, para birimi, kur, tarih, bölüşüm, not), isteğe bağlı fiş fotoğrafları, ödemeler, itirazlar ve hareket geçmişi. Bunları yalnızca o grubun üyeleri görebilir. Misafir üye eklersen misafirin yalnızca adı saklanır.</li>
+<li><b>Bildirimler:</b> telefonuna bildirim gönderebilmek için cihaz bildirim jetonu ve uygulama dilin (Firebase Cloud Messaging).</li>
+<li><b>Reklam:</b> ücretsiz sürümde Google AdMob reklam gösterir; AdMob reklam kimliği gibi cihaz bilgilerini kendi politikası çerçevesinde işler. Avrupa ve benzeri bölgelerde ilk açılışta izin sorulur; tercihini Uygulama ayarları → Reklam gizlilik seçenekleri'nden değiştirebilirsin.</li>
+<li><b>Satın alma:</b> "Tüm reklamları kaldır" alımı Google Play üzerinden yapılır; ödeme bilgilerini biz görmeyiz.</li>
+</ul></section>
+<section><h2>Cihazında kalanlar</h2><ul>
+<li>Fiş fotoğrafındaki tutar, telefonunda çalışan Google ML Kit ile okunur; fotoğraf bu iş için sunucuya gönderilmez.</li>
+<li>QR davet kodu kamera ile telefonda okunur.</li>
+<li>Tema, dil ve benzeri ayarlar yalnızca telefonunda saklanır.</li>
+<li>Döviz kuru, açık kaynak Frankfurter hizmetinden (api.frankfurter.dev) alınır; bu istekte kişisel veri gönderilmez.</li>
+</ul></section>
+<section><h2>Kullandığımız hizmetler</h2><ul>
+<li>Google Firebase (kimlik doğrulama, veritabanı, bildirim) — veriler Google altyapısında saklanır.</li>
+<li>Cloudflare Workers — gruptaki yeni hareketleri okuyup ilgili üyelere bildirim gönderen küçük bir sunucu görevi.</li>
+<li>Google AdMob ve Google Play Faturalandırma.</li>
+</ul><p class="muted">Bu hizmetler kendi gizlilik politikalarına tabidir.</p></section>
+<section><h2>İzinler</h2><ul><li><b>Kamera:</b> fiş fotoğrafı çekmek ve QR kod okumak için.</li><li><b>Bildirim:</b> grup hareketlerini haber vermek için.</li><li><b>İnternet:</b> verileri eşitlemek için.</li></ul></section>
+<section><h2>Saklama ve silme</h2><ul>
+<li>Hesabını istediğin an uygulamadan silebilirsin: <b>Profil → Hesabımı sil</b>. Ayrıntılar: <a href="hesap-silme.html">Hesap ve veri silme</a>.</li>
+<li>Kurucu bir grubu sildiğinde, 15 günlük geri alma süresinin ardından o grubun tüm harcamaları, fişleri ve kayıtları kalıcı olarak silinir.</li>
+</ul></section>
+<section><h2>Çocuklar</h2><p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir.</p></section>
+<section><h2>İletişim</h2><p>Soruların ve silme talepleri için: <a href="mailto:codeabec@gmail.com">codeabec@gmail.com</a></p><p class="muted">Bu politika değişirse bu sayfa güncellenir.</p></section>
+</main>
+<footer>Ortak Kasa · codeabec Studio · Son güncelleme: 2026-09-17</footer></body></html>

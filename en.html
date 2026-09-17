@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--brand:#6D4AFF;--orchid:#B04DFF;--pink:#FF5FA2;--ink:#17132B;--muted:#5d5875;--bg:#FBFAFF;--card:#fff}
+@media (prefers-color-scheme: dark){:root{--ink:#F3F0FF;--muted:#b3acd0;--bg:#110E1F;--card:#1B1730}}
+*{box-sizing:border-box}body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,var(--brand),var(--orchid) 55%,var(--pink));color:#fff;padding:40px 16px 56px;border-radius:0 0 36px 36px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header h1{margin:.2em 0 .1em;font-size:clamp(28px,6vw,40px);line-height:1.1}
+header p{margin:0;opacity:.9}
+.lang{float:right;color:#fff;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:40px;text-decoration:none;font-weight:700;font-size:14px}
+main{margin-top:-28px}
+section{background:var(--card);border-radius:24px;padding:20px 22px;margin:14px 0;box-shadow:0 8px 28px rgba(109,74,255,.08)}
+h2{margin:0 0 8px;font-size:19px}
+ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+.muted{color:var(--muted);font-size:14px}
+a{color:var(--brand)}
+.steps li{margin:8px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 40px}
+</style></head>
+<body><header><div class="wrap"><a class="lang" href="index.html">Türkçe</a><div style="font-size:40px">🪙</div><h1>Privacy Policy</h1><p>Ortak Kasa — shared expense book</p></div></header>
+<main class="wrap">
+<section><h2>In short</h2><p>Ortak Kasa helps housemates and travel buddies split shared expenses. The app never holds or transfers money; it only calculates who spent what and who owes whom. We don't sell your data.</p></section>
+<section><h2>What we collect</h2><ul>
+<li><b>Account:</b> sign-in with Google or email (Firebase Authentication). Your email is only used for signing in and is never shown to group members.</li>
+<li><b>Profile:</b> your display name, your Google profile photo URL and, optionally, your IBAN. Only people in your groups can see your IBAN.</li>
+<li><b>Group records:</b> group name and settings, expenses (title, amount, currency, exchange rate, date, split, note), optional receipt photos, payments, disputes and activity history. Only members of that group can see them. If you add a guest member, only the guest's name is stored.</li>
+<li><b>Notifications:</b> your device's push token and app language, so we can send notifications (Firebase Cloud Messaging).</li>
+<li><b>Ads:</b> the free version shows ads from Google AdMob, which processes device information such as the advertising ID under its own policy. In the EEA and similar regions you're asked for consent on first launch; you can change it under App settings → Ad privacy options.</li>
+<li><b>Purchases:</b> "Remove all ads" is purchased through Google Play; we never see your payment details.</li>
+</ul></section>
+<section><h2>What stays on your device</h2><ul>
+<li>Receipt amounts are read on your phone with Google ML Kit; the photo is not uploaded for this.</li>
+<li>QR invite codes are scanned on your phone.</li>
+<li>Theme, language and similar settings are stored only on your phone.</li>
+<li>Exchange rates come from the open-source Frankfurter service (api.frankfurter.dev); no personal data is sent with these requests.</li>
+</ul></section>
+<section><h2>Services we use</h2><ul>
+<li>Google Firebase (authentication, database, notifications) — data is stored on Google infrastructure.</li>
+<li>Cloudflare Workers — a small server task that reads new group activity and sends notifications to the relevant members.</li>
+<li>Google AdMob and Google Play Billing.</li>
+</ul><p class="muted">These services are subject to their own privacy policies.</p></section>
+<section><h2>Permissions</h2><ul><li><b>Camera:</b> to photograph receipts and scan QR codes.</li><li><b>Notifications:</b> to tell you about group activity.</li><li><b>Internet:</b> to sync your data.</li></ul></section>
+<section><h2>Retention and deletion</h2><ul>
+<li>You can delete your account from the app at any time: <b>Profile → Delete my account</b>. Details: <a href="delete-account.html">Account &amp; data deletion</a>.</li>
+<li>When a founder deletes a group, all its expenses, receipts and records are permanently deleted after a 15-day undo period.</li>
+</ul></section>
+<section><h2>Children</h2><p>The app is not directed at children under 13.</p></section>
+<section><h2>Contact</h2><p>Questions and deletion requests: <a href="mailto:codeabec@gmail.com">codeabec@gmail.com</a></p><p class="muted">If this policy changes, this page will be updated.</p></section>
+</main>
+<footer>Ortak Kasa · codeabec Studio · Last updated: 2026-09-17</footer></body></html>
