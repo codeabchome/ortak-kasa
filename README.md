@@ -4,9 +4,9 @@ Bu sayfalar Cloudflare Workers uzerine tasindi. Buradaki dosyalar sadece eski ad
 
 Guncel adresler:
 
-- https://ortakkasa.codeabchome.workers.dev/gizlilik
-- https://ortakkasa.codeabchome.workers.dev/privacy
-- https://ortakkasa.codeabchome.workers.dev/hesap-silme
-- https://ortakkasa.codeabchome.workers.dev/delete-account
+- https://ortakkasa.codeabec.workers.dev/gizlilik
+- https://ortakkasa.codeabec.workers.dev/privacy
+- https://ortakkasa.codeabec.workers.dev/hesap-silme
+- https://ortakkasa.codeabec.workers.dev/delete-account
 
 Icerigin kaynagi uygulama deposundaki site/ klasorudur.
