@@ -1,8 +1,12 @@
 # Ortak Kasa
 
-Gizlilik politikasi ve hesap silme sayfalari (GitHub Pages).
+Bu sayfalar Cloudflare Workers uzerine tasindi. Buradaki dosyalar sadece eski adresleri yeni adrese yonlendirir.
 
-- https://codeabchome.github.io/ortak-kasa/
-- https://codeabchome.github.io/ortak-kasa/hesap-silme.html
-- https://codeabchome.github.io/ortak-kasa/en.html
-- https://codeabchome.github.io/ortak-kasa/delete-account.html
+Guncel adresler:
+
+- https://ortakkasa.codeabchome.workers.dev/gizlilik
+- https://ortakkasa.codeabchome.workers.dev/privacy
+- https://ortakkasa.codeabchome.workers.dev/hesap-silme
+- https://ortakkasa.codeabchome.workers.dev/delete-account
+
+Icerigin kaynagi uygulama deposundaki site/ klasorudur.
